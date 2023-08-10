@@ -44,6 +44,7 @@ const ProjectSection = () => {
           </Grid>
           {data.map(({ title, gif, viewLink, gitLink }, i) => (
             <Grid
+              key={title}
               item
               mt={{ xs: 8, md: 4 }}
               xs={12}

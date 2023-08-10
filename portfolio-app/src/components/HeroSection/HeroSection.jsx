@@ -72,53 +72,6 @@ const HeroSection = () => {
             />
           </Typography>
         </Box>
-        {/* <Grid Container>
-          <Grid item xs={12}>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <img src={mainImg} alt="MainImg" hight={120} width={200} />
-            </Box>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography
-              variant="h5"
-              sx={{
-                textAlign: "center",
-                fontWeight: "bold",
-                background:
-                  "-webkit-linear-gradient(45deg, #42a5f5 30%, #f44336 90%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              Hi! Its me Usman I'm a
-              <Typewriter
-                words={[
-                  " WebDeveloper.",
-                  " Web Designer.",
-                  " Programmer.",
-                  " Frontend Developer.",
-                  " Backend Developer.",
-                ]}
-                loop={0}
-              />
-            </Typography>
-            <Typography
-              mt={1}
-              variant="body2"
-              sx={{
-                color: "#fafafa",
-                textAlign: "center",
-                fontWeight: "bold",
-              }}
-            >
-              Contact me for work with
-              <Typewriter
-                words={[" Quality.", " Accuraccy.", " dedication."]}
-                loop={0}
-              />
-            </Typography>
-          </Grid>
-        </Grid> */}
       </Container>
     </Box>
   );

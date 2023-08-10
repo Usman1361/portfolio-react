@@ -17,7 +17,7 @@ const RoadSection = () => {
   return (
     <Box>
       <Container maxWidth="xl">
-        <Grid Container pt={10}>
+        <Grid container pt={10}>
           <Grid item mb={10} xs={12}>
             <Typography
               variant="h3"

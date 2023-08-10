@@ -80,7 +80,7 @@ const Footer = () => {
             sx={{ textAlign: { xs: "center", md: "left" } }}
           >
             <Box>
-              <img src={logo} hight={70} width={70} />
+              <img src={logo} alt="logo" hight={70} width={70} />
             </Box>
             <Box>
               <Typography
@@ -124,6 +124,7 @@ const Footer = () => {
               </Typography>
               {siteData.map(({ name, link }) => (
                 <Button
+                  key={name}
                   variant="secondary"
                   sx={{
                     color: "#8393AF",
@@ -180,6 +181,7 @@ const Footer = () => {
                       padding: "12px",
                     }}
                     component="img"
+                    alt="img"
                     src={icon}
                     height={24}
                     width={24}

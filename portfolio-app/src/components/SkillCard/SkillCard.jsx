@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import AnimationCard from "../AnimatiionCard/AnimationCard";
+import AnimationCard from "../AnimationCard/AnimationCard";
 import { DiReact, DiMongodb } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 const SkillCard = () => {
@@ -47,6 +47,7 @@ const SkillCard = () => {
           </Grid>
           {data.map(({ title, detail, icon, color }, i) => (
             <Grid
+              key={title}
               item
               xs={12}
               sm={i === 2 ? 12 : 6}

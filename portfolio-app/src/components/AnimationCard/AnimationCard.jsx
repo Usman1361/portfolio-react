@@ -6,7 +6,7 @@ const AnimationCard = (props) => {
     <Tilt tiltAxis="x" tiltMaxAngleX="30">
       <Box
         height={{ xs: 270, md: 250 }}
-        width={{ xs: 350, md: 440 }}
+        width={{ xs: 350, md: 400 }}
         sx={{
           borderRadius: "5px",
           backgroundColor: "#263238",
