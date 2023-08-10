@@ -13,13 +13,7 @@ const HeroSection = () => {
     >
       <Container maxWidth="xl">
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <img
-            src={mainImg}
-            alt="MainImg"
-            loading="lazy"
-            height={250}
-            width={200}
-          />
+          <img src={mainImg} alt="MainImg" height={250} width={200} />
         </Box>
         <Box>
           <Typography
