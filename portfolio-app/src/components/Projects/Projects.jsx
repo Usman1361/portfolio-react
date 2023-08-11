@@ -24,10 +24,10 @@ const Projects = (props) => {
       width={{ xs: 320, sm: 370, md: 400 }}
       sx={{
         backgroundColor: "#263238",
-        // border: "2px solid #cfd8dc",
-        borderRadius: "16px",
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        borderRadius: "12px",
+        boxShadow: "-3px -1px 12px 3px rgb(97, 218, 251)",
         transition: "transform 0.3s ease-in-out",
+        cursor: "pointer",
         "&:hover": {
           transform: "scale(1.05)",
         },

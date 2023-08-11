@@ -6,10 +6,12 @@ const AnimationCard = (props) => {
     <Tilt tiltAxis="x" tiltMaxAngleX="30">
       <Box
         height={{ xs: 270, md: 250 }}
-        width={{ xs: 350, md: 400 }}
+        width={{ xs: 320, md: 400 }}
         sx={{
-          borderRadius: "5px",
+          borderRadius: "12px",
           backgroundColor: "#263238",
+          boxShadow: "-3px -1px 12px 3px rgb(97, 218, 251)",
+          cursor: "pointer",
         }}
       >
         <Box pt={1} sx={{ color: props.color, textAlign: "center" }}>

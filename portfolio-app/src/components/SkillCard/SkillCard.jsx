@@ -30,7 +30,7 @@ const SkillCard = () => {
   return (
     <Box pt={10}>
       <Container maxWidth="xl">
-        <Grid container>
+        <Grid container spacing={2} justifyContent="center">
           <Grid item mb={1} xs={12}>
             <Typography
               variant="h3"
@@ -50,7 +50,7 @@ const SkillCard = () => {
               key={title}
               item
               xs={12}
-              sm={i === 2 ? 12 : 6}
+              sm={6}
               md={4}
               mt={3}
               sx={{ display: "flex", justifyContent: "center" }}
