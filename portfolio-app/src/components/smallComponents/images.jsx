@@ -8,7 +8,7 @@ import reactLogo from "../../Images/reactLogo.png";
 import jsLogo from "../../Images/jsLogo.png";
 import csharpLogo from "../../Images/c#Logo.png";
 import cplusLogo from "../../Images/CplusLogo.png";
-import nodeLogo from "../../Images/nodeLogo.png";
+import nodeLogo from "../../Images/nodeLogo.png";   
 import bg2 from "../../Images/bg2.png";
 import bg3 from "../../Images/bg3.png";
 import gif1 from "../../Images/gif1.gif";

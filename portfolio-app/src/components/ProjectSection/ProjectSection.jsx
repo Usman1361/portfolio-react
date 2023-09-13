@@ -48,8 +48,10 @@ const ProjectSection = () => {
               item
               mt={{ xs: 8, md: 4 }}
               xs={12}
-              sm={i === 2 ? 12 : 6}
-              md={4}
+              sm={12}
+              md={i === 2 ? 12 : 6}
+              lg={i === 2 ? 12 : 6}
+              xl={4}
               sx={{ display: "flex", justifyContent: "center" }}
             >
               <Box>

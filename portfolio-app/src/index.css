@@ -2,9 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+/* styles.css */
+/* :root {
+  --bg-color: #121120; 
+} */
+
+/* Add any other styles that need to use --bg-color here */
 body {
   margin: 0;
   background-color: #121120;
+  /* background-color: var(--bg-color); */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

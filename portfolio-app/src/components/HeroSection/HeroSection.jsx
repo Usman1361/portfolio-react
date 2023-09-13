@@ -2,12 +2,14 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { mainImg, bg1 } from "../smallComponents/images";
-
+// import "../../index.css";
 const HeroSection = () => {
   return (
     <Box
       sx={{
+        backgroundColor: "var(--bg-color)",
         background: `url('${bg1}') no-repeat center center / 100% 100%`,
+
         py: 10,
       }}
     >

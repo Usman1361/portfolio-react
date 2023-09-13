@@ -22,7 +22,7 @@ import { Link } from "react-scroll";
 import Loading from "./smallComponents/Loading.jsx";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import { Link } from "react-router-dom";
-
+// import "../index.css";
 export const drawerWidth = 240;
 const navItems = ["Work", "skill", "projects", "About"];
 function Header(props) {
@@ -153,7 +153,8 @@ function Header(props) {
             sx={{
               boxShadow: "none",
               position: "static",
-              backgroundColor: "#121120",
+              backgroundColor: "var(--bg-color)",
+              // backgroundColor: "#121120",
             }}
           >
             <Toolbar>

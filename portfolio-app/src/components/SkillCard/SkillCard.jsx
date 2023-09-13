@@ -50,8 +50,10 @@ const SkillCard = () => {
               key={title}
               item
               xs={12}
-              sm={6}
-              md={4}
+              sm={12}
+              md={6}
+              lg={6}
+              xl={4}
               mt={3}
               sx={{ display: "flex", justifyContent: "center" }}
             >
