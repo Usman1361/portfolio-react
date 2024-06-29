@@ -65,6 +65,7 @@ const Projects = (props) => {
         </Typography>
         <Button
           variant="contained"
+          target="_black"
           sx={{
             backgroundColor: "#66bb6a",
             mb: 1,
@@ -81,6 +82,7 @@ const Projects = (props) => {
         </Button>
         <Button
           variant="contained"
+          target="_black"
           href={props.gitLink}
           sx={{
             backgroundColor: "#4db6ac",

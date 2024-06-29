@@ -1,29 +1,22 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Projects from "../Projects/Projects";
-import { gif1, gif2, gif3 } from "../smallComponents/images";
+// import { urlFor } from "../../SanityImageUrl";
+import client from "../../SanityClient";
+import { getSanityFileUrl } from "../../SanityFileUrl";
 
 const ProjectSection = () => {
-  const data = [
-    {
-      title: "Hotel Website",
-      gif: gif1,
-      viewLink: "https://usmanapp1.netlify.app/",
-      gitLink: "https://github.com/Usman1361/resturent-app",
-    },
-    {
-      title: "NFT Site",
-      gif: gif2,
-      viewLink: "https://usmannftapp.netlify.app/",
-      gitLink: "https://github.com/Usman1361/nft-app/tree/main/nft-app",
-    },
-    {
-      title: "Todo Mern App",
-      gif: gif3,
-      viewLink: "https://github.com/Usman1361/todo-mern-app",
-      gitLink: "https://github.com/Usman1361/todo-mern-app",
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    client
+      .fetch('*[_type == "ProjectsData"]')
+      .then((data) => {
+        setProjects(data);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <Box pt={10}>
       <Container maxWidth="xl">
@@ -42,24 +35,24 @@ const ProjectSection = () => {
               Projects
             </Typography>
           </Grid>
-          {data.map(({ title, gif, viewLink, gitLink }, i) => (
+          {projects.map(({ _id, name, projectimg, viewlink, codelink }, i) => (
             <Grid
-              key={title}
+              key={_id}
               item
-              mt={{ xs: 8, md: 4 }}
+              mt={{ xs: 8, md: 6 }}
               xs={12}
               sm={12}
-              md={i === 2 ? 12 : 6}
-              lg={i === 2 ? 12 : 6}
+              md={6}
+              lg={6}
               xl={4}
               sx={{ display: "flex", justifyContent: "center" }}
             >
               <Box>
                 <Projects
-                  title={title}
-                  gif={gif}
-                  viewLink={viewLink}
-                  gitLink={gitLink}
+                  title={name}
+                  gif={getSanityFileUrl(projectimg)} // Construct the image URL
+                  viewLink={viewlink}
+                  gitLink={codelink}
                 />
               </Box>
             </Grid>
