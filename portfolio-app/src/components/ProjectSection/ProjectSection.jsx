@@ -2,6 +2,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Projects from "../Projects/Projects";
 // import { urlFor } from "../../SanityImageUrl";
+// https://usmanportfolio.sanity.studio/structure
 import client from "../../SanityClient";
 import { getSanityFileUrl } from "../../SanityFileUrl";
 
